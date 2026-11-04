@@ -68,7 +68,7 @@ def publish_date_from_url(url: str) -> str | None:
 def classify(title: str, url: str, source: dict, basis: str = "PAGE_TITLE") -> dict:
     """Headline-only classification, never a confirmed premiere or equipment fact."""
     if not article_path(url, source):
-        return {"category": "SECTION_INDEX", "priority": "EXCLUDE", "signals": [],
+        return {"category": "SECTION_INDEX", "priority": "EXCLUDE", "signals": [], "matched_categories": [],
                 "basis": basis, "verification_status": "NOT_A_PUBLICATION",
                 "premiere_scope": "NOT_DETERMINED", "date_hint_from_url": None}
     lowered = html.unescape(title or "").lower()
@@ -101,6 +101,7 @@ def classify(title: str, url: str, source: dict, basis: str = "PAGE_TITLE") -> d
     elif category == "PREMIERE":
         scope = "UNSPECIFIED"
     return {"category": category, "priority": PRIORITY[category],
+            "matched_categories": sorted(found),
             "signals": found.get(category, [])[:4], "basis": basis,
             "verification_status": "NEEDS_EDITOR_REVIEW",
             "premiere_scope": scope,
@@ -163,6 +164,7 @@ def render_report(items: list[dict], runs: list[dict], mode: str = "LIVE") -> st
         sorted_items = sorted(items, key=lambda r: ({"P1": 0, "P2": 1, "REVIEW": 2, "P3": 3}.get(r["priority"], 9), r["source_id"], r["page_url"]))
         for it in sorted_items:
             title = it["title"].replace("\n", " ").replace("|", "-")
+            title = title.replace("\\", "\\\\").replace("[", "\\[").replace("]", "\\]")
             lines.append(f"- **{it['priority']} / {it['category']}** — [{title}]({it['page_url']}) "
                          f"({it['source_id']}; {it['event']}; {it['basis']}; "
                          f"scope={it['premiere_scope']}; **требует проверки**)" )
