@@ -92,6 +92,28 @@ class TestMonitor(unittest.TestCase):
             with self.assertRaises(ValueError):
                 load_recovery_runs(path, CFG)
 
+    def test_editorial_link_discovery_and_history_are_deduplicated(self):
+        markdown = (
+            "Landing page. "
+            "[World premiere of the new Yacht 40](/news/world-premiere-yacht-40) "
+            "[External](https://other.example/news/world-premiere-yacht-40)"
+        )
+        with tempfile.TemporaryDirectory() as base:
+            path = Path(base)
+            self.assertEqual(collect(FakeClient(markdown), CFG, path), 0)
+            links = [json.loads(x) for x in
+                     (path / "discovered_links.jsonl").read_text().splitlines()]
+            self.assertEqual(len(links), 1)
+            self.assertEqual(links[0]["discovery_status"], "LINK_ONLY_UNFETCHED")
+            items = [json.loads(x) for x in
+                     (path / "editorial_candidates.jsonl").read_text().splitlines()]
+            link_item = next(x for x in items if x["event"] == "LINK_DISCOVERED")
+            self.assertEqual(link_item["category"], "PREMIERE")
+            self.assertEqual(link_item["verification_status"], "NEEDS_EDITOR_REVIEW")
+            self.assertEqual(collect(FakeClient(markdown), CFG, path), 0)
+            self.assertEqual(len((path / "discovered_links.jsonl").read_text().splitlines()), 1)
+            self.assertIn("редакционная очередь", (path / "editorial_latest.md").read_text())
+
     def test_actor_limits(self):
         params = actor_input(CFG["sources"][0])
         self.assertTrue(params["respectRobotsTxtFile"])
