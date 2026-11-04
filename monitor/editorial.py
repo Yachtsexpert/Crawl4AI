@@ -199,6 +199,25 @@ def backfill_existing(data_dir: Path, sources: list[dict]) -> int:
         if key not in seen:
             seen.add(key)
             items.append(item)
+    # Preserve the durable link discoveries when recalculating the historical queue.
+    # This makes offline backfill safe to run before OR after a replay/live crawl.
+    discovered = data_dir / "discovered_links.jsonl"
+    if discovered.exists():
+        observed_urls = {(it["source_id"], it["page_url"]) for it in items}
+        for line in discovered.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            source = source_by_id.get(row.get("source_id"))
+            if not source or (row["source_id"], row["page_url"]) in observed_urls:
+                continue
+            item = editorial_item(row, source, "LINK_DISCOVERED", "LINK_ANCHOR")
+            if item is None:
+                continue
+            key = (item["source_id"], item["page_url"], item["content_sha256"], item["event"])
+            if key not in seen:
+                seen.add(key)
+                items.append(item)
     data_dir.mkdir(parents=True, exist_ok=True)
     _atomic_text(data_dir / "editorial_candidates.jsonl", "".join(json.dumps(x, ensure_ascii=False, sort_keys=True) + "\n" for x in items))
     runs = [{"status": "HISTORICAL", "source_id": s["id"]} for s in sources]
