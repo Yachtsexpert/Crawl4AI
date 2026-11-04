@@ -12,6 +12,9 @@ from decimal import Decimal
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
+from .editorial import (_atomic_text, backfill_existing, editorial_item,
+                        extract_article_links, render_report)
+
 ACTOR = "apify/website-content-crawler"
 
 
@@ -38,6 +41,10 @@ def validate(path):
             raise ValueError("HTTPS source URL required")
         if type(source["max_pages"]) is not int or not 1 <= source["max_pages"] <= 3:
             raise ValueError("max_pages must be 1..3")
+        prefixes = source.get("article_path_prefixes", [])
+        if not isinstance(prefixes, list) or len(prefixes) > 8 or any(
+                not isinstance(p, str) or not p.startswith("/") or len(p) > 100 for p in prefixes):
+            raise ValueError("Invalid article path prefixes")
         ids.add(key)
     cap = Decimal(str(cfg["max_charge_usd_per_source"]))
     if not Decimal("0") < cap <= Decimal("0.25"):
@@ -69,6 +76,14 @@ def collect(client, cfg, folder, observed_at=None, replay_runs=None):
     state_file = folder / "last_seen.json"
     state = json.loads(state_file.read_text(encoding="utf-8")) if state_file.exists() else {}
     observations, changes, runs = [], [], []
+    editorial_items, discovered_links = [], []
+    discovered_seen = set()
+    discovered_file = folder / "discovered_links.jsonl"
+    if discovered_file.exists():
+        for line in discovered_file.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                previous = json.loads(line)
+                discovered_seen.add((previous["source_id"], previous["page_url"]))
     failures = 0
     for source in cfg["sources"]:
         if not source.get("enabled", True):
@@ -103,6 +118,7 @@ def collect(client, cfg, folder, observed_at=None, replay_runs=None):
             data_id = result.default_dataset_id
             stage = "dataset_read"
             staged, staged_changes, staged_state = [], [], dict(state)
+            staged_links, staged_link_seen = [], set()
             seen = set()
             for row in client.dataset(data_id).iterate_items():
                 if not isinstance(row, dict):
@@ -114,6 +130,14 @@ def collect(client, cfg, folder, observed_at=None, replay_runs=None):
                 if not url or page_host != source_host or not isinstance(content, str) or not content.strip() or url in seen:
                     continue
                 seen.add(url)
+                # Discover links from already fetched Markdown; no extra Actor requests.
+                for link in extract_article_links(content, url, source, limit=35):
+                    link_key = (source_id, link["page_url"])
+                    if link_key not in discovered_seen and link_key not in staged_link_seen:
+                        staged_link_seen.add(link_key)
+                        link["observed_at_utc"] = observed_at
+                        link["actor_run_id"] = run_id
+                        staged_links.append(link)
                 normalized = re.sub(r"\s+", " ", content).strip()
                 digest = hashlib.sha256(normalized.encode("utf-8")).hexdigest()
                 metadata = row.get("metadata") if isinstance(row.get("metadata"), dict) else {}
@@ -137,6 +161,21 @@ def collect(client, cfg, folder, observed_at=None, replay_runs=None):
             state = staged_state
             observations.extend(staged)
             changes.extend(staged_changes)
+            # The index section is excluded; new page != new publication today.
+            for event in staged_changes:
+                item = editorial_item(event, source, event["event"], "PAGE_TITLE")
+                if item is not None:
+                    editorial_items.append(item)
+            fetched_urls = {rec["page_url"] for rec in staged}
+            for link in staged_links[:35]:
+                link_key = (source_id, link["page_url"])
+                if link["page_url"] in fetched_urls or source_id + "|" + link["page_url"] in state:
+                    continue
+                discovered_seen.add(link_key)
+                discovered_links.append(link)
+                item = editorial_item(link, source, "LINK_DISCOVERED", "LINK_ANCHOR")
+                if item is not None:
+                    editorial_items.append(item)
             runs.append({"source_id": source_id, "status": "SUCCEEDED", "pages": len(staged),
                          "observed_at_utc": observed_at, "actor_run_id": run_id,
                          "actor_status": actor_status, "collection_mode": mode})
@@ -151,6 +190,10 @@ def collect(client, cfg, folder, observed_at=None, replay_runs=None):
     append_jsonl(folder / "observations.jsonl", observations)
     append_jsonl(folder / "changes.jsonl", changes)
     append_jsonl(folder / "runs.jsonl", runs)
+    append_jsonl(folder / "discovered_links.jsonl", discovered_links)
+    append_jsonl(folder / "editorial_candidates.jsonl", editorial_items)
+    _atomic_text(folder / "editorial_latest.md", render_report(
+        editorial_items, runs, mode="REPLAY" if replay_runs is not None else "LIVE"))
     folder.mkdir(parents=True, exist_ok=True)
     temporary = folder / "last_seen.tmp"
     temporary.write_text(json.dumps(state, indent=2, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
@@ -177,6 +220,8 @@ def main():
     parser.add_argument("--config", default="config/sources.json")
     parser.add_argument("--data-dir", default="data")
     parser.add_argument("--check-config", action="store_true")
+    parser.add_argument("--rebuild-editorial", action="store_true",
+                        help="Classify historical change records without calling Apify")
     parser.add_argument("--recover-first-run", action="store_true",
                         help="Reuse completed Apify runs without starting new Actors")
     args = parser.parse_args()
@@ -184,6 +229,10 @@ def main():
         cfg = validate(args.config)
         if args.check_config:
             print("VALID:", len(cfg["sources"]), "sources")
+            return 0
+        if args.rebuild_editorial:
+            count = backfill_existing(Path(args.data_dir), cfg["sources"])
+            print("Offline editorial classifications:", count)
             return 0
         token = os.environ.get("APIFY_TOKEN")
         if not token:
