@@ -6,31 +6,48 @@
       "id": "yamarin-news",
       "url": "https://yamarin.com/en/news",
       "max_pages": 2,
-      "enabled": true
+      "enabled": true,
+      "article_path_prefixes": [
+        "/en/news/"
+      ]
     },
     {
       "id": "axopar-news",
       "url": "https://www.axopar.com/media/newsroom/",
       "max_pages": 2,
-      "enabled": true
+      "enabled": true,
+      "article_path_prefixes": [
+        "/media/newsroom/press-releases/",
+        "/media/newsroom/news/",
+        "/media/newsroom/articles/"
+      ]
     },
     {
       "id": "fjord-news",
       "url": "https://fjordboats.com/us/news/",
       "max_pages": 2,
-      "enabled": true
+      "enabled": true,
+      "article_path_prefixes": [
+        "/us/news/"
+      ]
     },
     {
       "id": "beneteau-news",
       "url": "https://www.beneteau.com/newsroom/boating-news",
       "max_pages": 2,
-      "enabled": true
+      "enabled": true,
+      "article_path_prefixes": [
+        "/newsroom/"
+      ]
     },
     {
       "id": "pressmare-media",
       "url": "https://www.pressmare.it/en/media/press-mare/",
       "max_pages": 2,
-      "enabled": true
+      "enabled": true,
+      "article_path_prefixes": [
+        "/en/media/press-mare/"
+      ]
     }
   ]
 }
