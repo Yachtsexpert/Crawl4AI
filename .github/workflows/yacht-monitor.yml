@@ -2,6 +2,15 @@ name: OK-Boats yacht market source monitor
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Recover completed Nov 4 runs (no new Actors), or start new live runs'
+        type: choice
+        required: true
+        default: recover
+        options:
+          - recover
+          - live
   schedule:
     # 07:23 UTC = 10:23 Europe/Istanbul, daily
     - cron: '23 7 * * *'
@@ -41,12 +50,20 @@ jobs:
             echo '::error::Missing APIFY_TOKEN in repository Actions secrets.'
             exit 1
           fi
-      - name: Collect (Apify calls can incur charges)
+      - name: Collect or recover Apify results
         id: collect
         continue-on-error: true
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
-        run: python -m monitor.main
+          RUN_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+        run: |
+          if [ "$RUN_MODE" = "recover" ]; then
+            echo 'Recovering prior Actor datasets without starting new Actors'
+            python -m monitor.main --recover-first-run
+          else
+            echo 'Starting new Actors; Apify usage can incur charges'
+            python -m monitor.main
+          fi
       - name: Commit observations and statuses
         if: always() && steps.collect.outcome != 'skipped'
         run: |
