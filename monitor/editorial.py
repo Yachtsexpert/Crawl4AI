@@ -166,6 +166,8 @@ def render_report(items: list[dict], runs: list[dict], mode: str = "LIVE") -> st
             lines.append(f"- **{it['priority']} / {it['category']}** — [{title}]({it['page_url']}) "
                          f"({it['source_id']}; {it['event']}; {it['basis']}; "
                          f"scope={it['premiere_scope']}; **требует проверки**)" )
+    if mode == "OFFLINE_HISTORICAL_BACKFILL":
+        lines[7] = f"Офлайн-пересчёт сохранённых данных: {len(runs)} источников в конфигурации; новые запросы к сайтам и Apify не выполнялись."
     lines.extend(["", "## Сводка категорий", ""])
     for key in ("PREMIERE", "PROPULSION", "TECHNICAL_UPDATE", "CORPORATE", "NEEDS_REVIEW"):
         lines.append(f"- {key}: {counts[key]}")
