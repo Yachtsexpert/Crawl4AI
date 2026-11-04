@@ -4,11 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Recover completed Nov 4 runs (no new Actors), or start new live runs'
+        description: 'Classify existing records for free; recover old datasets; or start paid live Actors'
         type: choice
         required: true
-        default: recover
+        default: classify
         options:
+          - classify
           - recover
           - live
   schedule:
@@ -43,6 +44,7 @@ jobs:
           python -m monitor.main --check-config
           python -m unittest discover -s tests -v
       - name: Check token
+        if: github.event_name != 'workflow_dispatch' || inputs.mode != 'classify'
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
         run: |
@@ -57,7 +59,10 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           RUN_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
         run: |
-          if [ "$RUN_MODE" = "recover" ]; then
+          if [ "$RUN_MODE" = "classify" ]; then
+            echo 'Rebuilding editorial classifications from saved changes: NO Apify Actors launched'
+            python -m monitor.main --rebuild-editorial
+          elif [ "$RUN_MODE" = "recover" ]; then
             echo 'Recovering prior Actor datasets without starting new Actors'
             python -m monitor.main --recover-first-run
           else
