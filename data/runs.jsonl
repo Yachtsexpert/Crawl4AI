@@ -1,0 +1,5 @@
+{"actor_run_id": "", "error_type": "AttributeError", "observed_at_utc": "2026-11-04T05:40:52+00:00", "source_id": "yamarin-news", "status": "FAILED"}
+{"actor_run_id": "", "error_type": "AttributeError", "observed_at_utc": "2026-11-04T05:40:52+00:00", "source_id": "axopar-news", "status": "FAILED"}
+{"actor_run_id": "", "error_type": "AttributeError", "observed_at_utc": "2026-11-04T05:40:52+00:00", "source_id": "fjord-news", "status": "FAILED"}
+{"actor_run_id": "", "error_type": "AttributeError", "observed_at_utc": "2026-11-04T05:40:52+00:00", "source_id": "beneteau-news", "status": "FAILED"}
+{"actor_run_id": "", "error_type": "AttributeError", "observed_at_utc": "2026-11-04T05:40:52+00:00", "source_id": "pressmare-media", "status": "FAILED"}
