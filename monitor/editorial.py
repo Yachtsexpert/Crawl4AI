@@ -45,6 +45,9 @@ def article_path(url: str, source: dict) -> bool:
     if (parsed.hostname or "").removeprefix("www.").lower() != (base.hostname or "").removeprefix("www.").lower():
         return False
     path = parsed.path.rstrip("/").lower()
+    # A configured prefix can be broader than the section URL (e.g. BENETEAU).
+    if path == base.path.rstrip("/").lower():
+        return False
     prefixes = source.get("article_path_prefixes") or [(base.path.rstrip("/") + "/")]
     return any(path.startswith(prefix.rstrip("/").lower() + "/") for prefix in prefixes)
 
