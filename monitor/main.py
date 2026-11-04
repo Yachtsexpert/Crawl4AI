@@ -76,15 +76,25 @@ def collect(client, cfg, folder, observed_at=None):
             continue
         source_id = source["id"]
         run_id = ""
+        actor_status = "UNKNOWN"
+        stage = "actor_call"
         try:
             result = client.actor(ACTOR).call(
                 run_input=actor_input(source), max_items=source["max_pages"],
                 max_total_charge_usd=Decimal(str(cfg["max_charge_usd_per_source"])),
                 run_timeout=timedelta(minutes=3))
-            if result is None or str(result.get("status", "")).upper() != "SUCCEEDED":
+            # apify-client >=3 returns a typed Run model, not a dictionary.
+            # Status is an enum; preserve its value instead of relying on str(enum).
+            if result is None:
+                raise RuntimeError("Actor did not return a run")
+            stage = "run_status"
+            run_id = str(result.id)
+            raw_status = result.status
+            actor_status = str(getattr(raw_status, "value", raw_status))
+            if actor_status != "SUCCEEDED":
                 raise RuntimeError("Actor run unsuccessful")
-            run_id = str(result["id"])
-            data_id = result["defaultDatasetId"]
+            data_id = result.default_dataset_id
+            stage = "dataset_read"
             staged, staged_changes, staged_state = [], [], dict(state)
             seen = set()
             for row in client.dataset(data_id).iterate_items():
@@ -120,11 +130,14 @@ def collect(client, cfg, folder, observed_at=None):
             observations.extend(staged)
             changes.extend(staged_changes)
             runs.append({"source_id": source_id, "status": "SUCCEEDED", "pages": len(staged),
-                         "observed_at_utc": observed_at, "actor_run_id": run_id})
+                         "observed_at_utc": observed_at, "actor_run_id": run_id,
+                         "actor_status": actor_status})
         except Exception as exc:
             failures += 1
-            # Avoid leaking SDK error messages, which may contain sensitive request details.
-            runs.append({"source_id": source_id, "status": "FAILED", "error_type": type(exc).__name__,
+            # Never expose arbitrary API exception messages: they can contain credentials.
+            runs.append({"source_id": source_id, "status": "FAILED",
+                         "error_stage": stage, "error_type": type(exc).__name__,
+                         "actor_status": actor_status,
                          "observed_at_utc": observed_at, "actor_run_id": run_id})
         print(source_id + ": " + runs[-1]["status"], flush=True)
     append_jsonl(folder / "observations.jsonl", observations)
