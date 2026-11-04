@@ -63,7 +63,7 @@ def actor_input(source):
             "saveScreenshots": False}
 
 
-def collect(client, cfg, folder, observed_at=None):
+def collect(client, cfg, folder, observed_at=None, replay_runs=None):
     folder = Path(folder)
     observed_at = observed_at or datetime.now(timezone.utc).isoformat(timespec="seconds")
     state_file = folder / "last_seen.json"
@@ -78,11 +78,18 @@ def collect(client, cfg, folder, observed_at=None):
         run_id = ""
         actor_status = "UNKNOWN"
         stage = "actor_call"
+        mode = "REPLAY" if replay_runs is not None else "LIVE"
         try:
-            result = client.actor(ACTOR).call(
-                run_input=actor_input(source), max_items=source["max_pages"],
-                max_total_charge_usd=Decimal(str(cfg["max_charge_usd_per_source"])),
-                run_timeout=timedelta(minutes=3))
+            if replay_runs is not None:
+                # Read the already completed Actor run. Never start a second paid run.
+                stage = "replay_lookup"
+                run_id = replay_runs[source_id]
+                result = client.run(run_id).get()
+            else:
+                result = client.actor(ACTOR).call(
+                    run_input=actor_input(source), max_items=source["max_pages"],
+                    max_total_charge_usd=Decimal(str(cfg["max_charge_usd_per_source"])),
+                    run_timeout=timedelta(minutes=3))
             # apify-client >=3 returns a typed Run model, not a dictionary.
             # Status is an enum; preserve its value instead of relying on str(enum).
             if result is None:
@@ -116,6 +123,7 @@ def collect(client, cfg, folder, observed_at=None):
                 record = {"source_id": source_id, "source_url": source["url"],
                           "page_url": url, "title": title, "content_sha256": digest,
                           "observed_at_utc": observed_at, "actor_run_id": run_id,
+                          "collection_mode": mode,
                           "price_status": "NOT_COLLECTED", "equipment_status": "NOT_COLLECTED"}
                 staged.append(record)
                 if prior is None or prior["content_sha256"] != digest:
@@ -131,13 +139,13 @@ def collect(client, cfg, folder, observed_at=None):
             changes.extend(staged_changes)
             runs.append({"source_id": source_id, "status": "SUCCEEDED", "pages": len(staged),
                          "observed_at_utc": observed_at, "actor_run_id": run_id,
-                         "actor_status": actor_status})
+                         "actor_status": actor_status, "collection_mode": mode})
         except Exception as exc:
             failures += 1
             # Never expose arbitrary API exception messages: they can contain credentials.
             runs.append({"source_id": source_id, "status": "FAILED",
                          "error_stage": stage, "error_type": type(exc).__name__,
-                         "actor_status": actor_status,
+                         "actor_status": actor_status, "collection_mode": mode,
                          "observed_at_utc": observed_at, "actor_run_id": run_id})
         print(source_id + ": " + runs[-1]["status"], flush=True)
     append_jsonl(folder / "observations.jsonl", observations)
@@ -151,11 +159,26 @@ def collect(client, cfg, folder, observed_at=None):
     return 1 if failures else 0
 
 
+
+def load_recovery_runs(path, cfg):
+    """Read known completed Actor run IDs; never allow an unverified source mapping."""
+    mappings = json.loads(Path(path).read_text(encoding="utf-8"))
+    expected = {source["id"] for source in cfg["sources"] if source.get("enabled", True)}
+    if not isinstance(mappings, dict) or set(mappings) != expected:
+        raise ValueError("Recovery run IDs must exactly match enabled sources")
+    if not all(isinstance(value, str) and re.fullmatch(r"[A-Za-z0-9]{17}", value)
+               for value in mappings.values()):
+        raise ValueError("Invalid Apify run ID in recovery map")
+    return mappings
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="config/sources.json")
     parser.add_argument("--data-dir", default="data")
     parser.add_argument("--check-config", action="store_true")
+    parser.add_argument("--recover-first-run", action="store_true",
+                        help="Reuse completed Apify runs without starting new Actors")
     args = parser.parse_args()
     try:
         cfg = validate(args.config)
@@ -167,7 +190,8 @@ def main():
             print("Missing GitHub Actions secret APIFY_TOKEN", file=sys.stderr)
             return 2
         from apify_client import ApifyClient
-        return collect(ApifyClient(token), cfg, args.data_dir)
+        replay_runs = load_recovery_runs("config/first_run_ids.json", cfg) if args.recover_first_run else None
+        return collect(ApifyClient(token), cfg, args.data_dir, replay_runs=replay_runs)
     except (ValueError, KeyError, OSError, json.JSONDecodeError) as exc:
         print("Configuration error:", type(exc).__name__, str(exc), file=sys.stderr)
         return 2
