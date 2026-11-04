@@ -2,6 +2,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 from monitor.main import actor_input, canonical, collect, validate
 
 
@@ -13,7 +14,9 @@ class FakeClient:
         return self
 
     def call(self, **kwargs):
-        return {"id": "test-run", "status": self.status, "defaultDatasetId": "test-dataset"}
+        # Mimic apify-client >=3: typed Pydantic Run with attributes and enum status.
+        return SimpleNamespace(id="test-run", status=SimpleNamespace(value=self.status),
+                               default_dataset_id="test-dataset")
 
     def dataset(self, dataset_id):
         return self
@@ -44,6 +47,9 @@ class TestMonitor(unittest.TestCase):
             changes = [json.loads(x) for x in (path / "changes.jsonl").read_text().splitlines()]
             self.assertEqual([x["event"] for x in changes], ["NEW_PAGE", "CONTENT_CHANGED"])
             self.assertNotIn("B boat", (path / "observations.jsonl").read_text())
+            observations = [json.loads(x) for x in (path / "observations.jsonl").read_text().splitlines()]
+            self.assertTrue(all(x["actor_run_id"] == "test-run" for x in observations))
+            self.assertEqual(len(observations), 3)
 
     def test_fail_preserves_state(self):
         with tempfile.TemporaryDirectory() as base:
@@ -52,6 +58,10 @@ class TestMonitor(unittest.TestCase):
             old = (path / "last_seen.json").read_text()
             self.assertEqual(collect(FakeClient("changed", status="FAILED"), CFG, path), 1)
             self.assertEqual((path / "last_seen.json").read_text(), old)
+            last_run = json.loads((path / "runs.jsonl").read_text().splitlines()[-1])
+            self.assertEqual(last_run["error_stage"], "run_status")
+            self.assertEqual(last_run["actor_status"], "FAILED")
+            self.assertEqual(last_run["actor_run_id"], "test-run")
 
     def test_actor_limits(self):
         params = actor_input(CFG["sources"][0])
