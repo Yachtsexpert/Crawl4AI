@@ -8,3 +8,8 @@
 {"actor_run_id": "E7lbZy1omLb4QGEf4", "actor_status": "SUCCEEDED", "collection_mode": "REPLAY", "observed_at_utc": "2026-11-04T06:07:32+00:00", "pages": 2, "source_id": "fjord-news", "status": "SUCCEEDED"}
 {"actor_run_id": "84PdwAZAs6XRCpsId", "actor_status": "SUCCEEDED", "collection_mode": "REPLAY", "observed_at_utc": "2026-11-04T06:07:32+00:00", "pages": 1, "source_id": "beneteau-news", "status": "SUCCEEDED"}
 {"actor_run_id": "OS5N9sQOZTUGQfQOY", "actor_status": "SUCCEEDED", "collection_mode": "REPLAY", "observed_at_utc": "2026-11-04T06:07:32+00:00", "pages": 2, "source_id": "pressmare-media", "status": "SUCCEEDED"}
+{"actor_run_id": "TccsWZXr6fLNbt0ia", "actor_status": "SUCCEEDED", "collection_mode": "LIVE", "observed_at_utc": "2026-11-04T15:32:25+00:00", "pages": 2, "source_id": "yamarin-news", "status": "SUCCEEDED"}
+{"actor_run_id": "GPidLO6pbesnEb4Nu", "actor_status": "SUCCEEDED", "collection_mode": "LIVE", "observed_at_utc": "2026-11-04T15:32:25+00:00", "pages": 1, "source_id": "axopar-news", "status": "SUCCEEDED"}
+{"actor_run_id": "fMwRgol54k8mMEAEd", "actor_status": "SUCCEEDED", "collection_mode": "LIVE", "observed_at_utc": "2026-11-04T15:32:25+00:00", "pages": 2, "source_id": "fjord-news", "status": "SUCCEEDED"}
+{"actor_run_id": "ICrErkgG3CHVH8Xxt", "actor_status": "SUCCEEDED", "collection_mode": "LIVE", "observed_at_utc": "2026-11-04T15:32:25+00:00", "pages": 1, "source_id": "beneteau-news", "status": "SUCCEEDED"}
+{"actor_run_id": "8TgF5bYAPGQfBdIkp", "actor_status": "SUCCEEDED", "collection_mode": "LIVE", "observed_at_utc": "2026-11-04T15:32:25+00:00", "pages": 2, "source_id": "pressmare-media", "status": "SUCCEEDED"}

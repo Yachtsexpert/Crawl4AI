@@ -1,8 +1,8 @@
 {
   "axopar-news|https://www.axopar.com/media/newsroom": {
-    "content_sha256": "00ba6e51eafb026170965be090e37adf5cff733d5b6af39c1fa74b8f42f14cc8",
+    "content_sha256": "be201e04da316d57a3cdf82f950ff328de50581a336b44ea49294d31ee7473dd",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-04T06:07:32+00:00",
+    "last_seen_at_utc": "2026-11-04T15:32:25+00:00",
     "title": "Newsroom – Axopar Boats"
   },
   "axopar-news|https://www.axopar.com/media/newsroom/press-releases/axopar-brings-the-complete-38-range-to-flibs-with-two-u-s-premieres": {
@@ -14,14 +14,20 @@
   "beneteau-news|https://www.beneteau.com/newsroom/boating-news": {
     "content_sha256": "b074bcd3d53027847c1e31fbfa6e9a8c2ef54a05eb6ffab2b84f9896ae136c8b",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-04T06:07:32+00:00",
+    "last_seen_at_utc": "2026-11-04T15:32:25+00:00",
     "title": "Boating news | BENETEAU"
   },
   "fjord-news|https://fjordboats.com/us/news": {
     "content_sha256": "fc8ff1ad281260dbbcdf9aba503ebb6284b0a19dc142bfc5308699280a92ad59",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-04T06:07:32+00:00",
+    "last_seen_at_utc": "2026-11-04T15:32:25+00:00",
     "title": "FJORD News | FJORD Boats"
+  },
+  "fjord-news|https://fjordboats.com/us/news/cannes-2026": {
+    "content_sha256": "00b2dfea064cc2286955ed2170257dfffab2566d3e8bd8657e63e1cee5759cd9",
+    "first_seen_at_utc": "2026-11-04T15:32:25+00:00",
+    "last_seen_at_utc": "2026-11-04T15:32:25+00:00",
+    "title": "World Premieres Take Centre Stage in Cannes"
   },
   "fjord-news|https://fjordboats.com/us/news/hanseyachts-ag-appoints-new-fjord-dealer-in-turkey": {
     "content_sha256": "e1be96d06f805eb5ee207c7af5415eeccb7bef9c8ef4a05955004ad2e3b1065e",
@@ -30,9 +36,9 @@
     "title": "Hanse Yachts AG Appoints new Fjord Dealer in Turkey"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare": {
-    "content_sha256": "14536c9ff1a0f429fd5200e8d1c4c2d261de0be1af110bf931ae36cd1d3018b6",
+    "content_sha256": "685cd47cadcb062a7bbafce56eab41e2aa96a253b5fdf15d3663af17ea938463",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-04T06:07:32+00:00",
+    "last_seen_at_utc": "2026-11-04T15:32:25+00:00",
     "title": "Pressmare | Press Mare"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-02/kiboko-4-wins-at-the-2026-iss-awards-93860": {
@@ -41,16 +47,22 @@
     "last_seen_at_utc": "2026-11-04T06:07:32+00:00",
     "title": "Pressmare | Southern Wind SW108 “Kiboko 4” wins at the ISS Awards"
   },
+  "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-04/ralph-chami-joins-one-ocean-foundation-scientific-committee-93908": {
+    "content_sha256": "c1b1d8ec3801f865c78ef46aaa3215345cef9b042ad2a7a1fec2404f10eacbdb",
+    "first_seen_at_utc": "2026-11-04T15:32:25+00:00",
+    "last_seen_at_utc": "2026-11-04T15:32:25+00:00",
+    "title": "Pressmare | Former IMF economist Ralph Chami joins One Ocean Foundation"
+  },
   "yamarin-news|https://yamarin.com/en/news": {
     "content_sha256": "a720e905cf54760d2b530170cf3e15d78139e5fa735354606488bf510de9a485",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-04T06:07:32+00:00",
+    "last_seen_at_utc": "2026-11-04T15:32:25+00:00",
     "title": "News – Yamarin Powerboats"
   },
   "yamarin-news|https://yamarin.com/en/news/new-yamarin-aura-lounge-more-space-enjoy-available-order-now": {
     "content_sha256": "2f539184f30c5d0dd512b2d84bbd419e12a1b5c261ccbf62f78ad8e28036d0b7",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-04T06:07:32+00:00",
+    "last_seen_at_utc": "2026-11-04T15:32:25+00:00",
     "title": "New Yamarin Aura Lounge with more space to enjoy - available to order now | Yamarin Powerboats"
   }
 }
