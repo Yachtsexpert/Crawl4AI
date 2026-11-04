@@ -21,6 +21,11 @@ class EditorialTests(unittest.TestCase):
         info = classify("Newsroom – Axopar", SOURCE["url"], SOURCE)
         self.assertEqual(info["category"], "SECTION_INDEX")
 
+    def test_beneteau_broad_prefix_still_excludes_index(self):
+        source = {"id": "beneteau", "url": "https://www.beneteau.com/newsroom/boating-news",
+                  "article_path_prefixes": ["/newsroom/"]}
+        self.assertFalse(article_path(source["url"], source))
+
     def test_us_premiere_keeps_regional_scope(self):
         title = "Axopar Brings the Complete 38 Range to FLIBS with Two U.S. Premieres"
         info = classify(
