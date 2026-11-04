@@ -97,7 +97,7 @@ def collect(client, cfg, folder, observed_at=None):
                 if not url or page_host != source_host or not isinstance(content, str) or not content.strip() or url in seen:
                     continue
                 seen.add(url)
-                normalized = re.sub(r"\\s+", " ", content).strip()
+                normalized = re.sub(r"\s+", " ", content).strip()
                 digest = hashlib.sha256(normalized.encode("utf-8")).hexdigest()
                 metadata = row.get("metadata") if isinstance(row.get("metadata"), dict) else {}
                 title = str(metadata.get("title") or row.get("title") or "")[:240]
