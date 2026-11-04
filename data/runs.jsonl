@@ -3,3 +3,8 @@
 {"actor_run_id": "", "error_type": "AttributeError", "observed_at_utc": "2026-11-04T05:40:52+00:00", "source_id": "fjord-news", "status": "FAILED"}
 {"actor_run_id": "", "error_type": "AttributeError", "observed_at_utc": "2026-11-04T05:40:52+00:00", "source_id": "beneteau-news", "status": "FAILED"}
 {"actor_run_id": "", "error_type": "AttributeError", "observed_at_utc": "2026-11-04T05:40:52+00:00", "source_id": "pressmare-media", "status": "FAILED"}
+{"actor_run_id": "6vxIYtsS5pjsD8d85", "actor_status": "SUCCEEDED", "collection_mode": "REPLAY", "observed_at_utc": "2026-11-04T06:07:32+00:00", "pages": 2, "source_id": "yamarin-news", "status": "SUCCEEDED"}
+{"actor_run_id": "hDyQjbtrxmCVS36Ia", "actor_status": "SUCCEEDED", "collection_mode": "REPLAY", "observed_at_utc": "2026-11-04T06:07:32+00:00", "pages": 2, "source_id": "axopar-news", "status": "SUCCEEDED"}
+{"actor_run_id": "E7lbZy1omLb4QGEf4", "actor_status": "SUCCEEDED", "collection_mode": "REPLAY", "observed_at_utc": "2026-11-04T06:07:32+00:00", "pages": 2, "source_id": "fjord-news", "status": "SUCCEEDED"}
+{"actor_run_id": "84PdwAZAs6XRCpsId", "actor_status": "SUCCEEDED", "collection_mode": "REPLAY", "observed_at_utc": "2026-11-04T06:07:32+00:00", "pages": 1, "source_id": "beneteau-news", "status": "SUCCEEDED"}
+{"actor_run_id": "OS5N9sQOZTUGQfQOY", "actor_status": "SUCCEEDED", "collection_mode": "REPLAY", "observed_at_utc": "2026-11-04T06:07:32+00:00", "pages": 2, "source_id": "pressmare-media", "status": "SUCCEEDED"}
