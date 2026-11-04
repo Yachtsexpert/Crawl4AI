@@ -99,6 +99,24 @@ class EditorialTests(unittest.TestCase):
             self.assertIn("OFFLINE_HISTORICAL_BACKFILL",
                           (folder / "editorial_latest.md").read_text())
 
+    def test_historical_backfill_preserves_unfetched_links(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            (folder / "changes.jsonl").write_text(
+                json.dumps({"source_id": SOURCE["id"], "page_url": SOURCE["url"],
+                            "title": "Newsroom", "event": "NEW_PAGE",
+                            "content_sha256": "index"}) + "\n", encoding="utf-8")
+            (folder / "discovered_links.jsonl").write_text(
+                json.dumps({"source_id": SOURCE["id"], "source_url": SOURCE["url"],
+                            "page_url": "https://www.axopar.com/media/newsroom/press-releases/model-40",
+                            "title": "World premiere of new Model 40",
+                            "observed_at_utc": "2026-11-04T06:07:32+00:00"}) + "\n",
+                encoding="utf-8")
+            self.assertEqual(backfill_existing(folder, [SOURCE]), 1)
+            candidate = json.loads((folder / "editorial_candidates.jsonl").read_text().splitlines()[0])
+            self.assertEqual(candidate["event"], "LINK_DISCOVERED")
+            self.assertEqual(candidate["category"], "PREMIERE")
+
     def test_empty_results_do_not_claim_no_news(self):
         report = render_report([], [{"status": "SUCCEEDED"}], mode="LIVE")
         self.assertIn("не доказывает отсутствие новостей", report)
