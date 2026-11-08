@@ -9,12 +9,14 @@
 
 ## Кандидаты для редактора
 
-- **REVIEW / NEEDS_REVIEW** — [Pressmare - Heesen Project Setteesettanta: first look at the interiors](https://www.pressmare.it/en/media/press-mare/2026-11-06/heesen-project-setteesettanta-interiors-by-cristiano-gatto-93954) (pressmare-media; CONTENT_CHANGED; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [America’s Cup: Checco Bruni, Alinghi’s new skipper, wants to build the strongest sailing team](https://www.pressmare.it/en/media/press-mare/2026-11-07/america-cup-bruni-alingh-new-skipper-build-sailing-team-93968) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **P1 / PREMIERE** — [Axopar Completes the 38 Range with the All-New Cross Top — A Unique Balance Between Openness and Protection](https://www.axopar.com/media/newsroom/press-releases/axopar-completes-the-38-range-with-the-all-new-cross-top-a-unique-balance-between-openness-and-protection) (axopar-news; LINK_DISCOVERED; LINK_ANCHOR; scope=UNSPECIFIED; **требует проверки**)
+- **P1 / PREMIERE** — [Introducing the all-new Axopar 38 - Built on an icon, redefined](https://www.axopar.com/media/newsroom/press-releases/introducing-the-all-new-axopar-38-built-on-an-icon-redefined) (axopar-news; LINK_DISCOVERED; LINK_ANCHOR; scope=UNSPECIFIED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Axopar](https://www.axopar.com/media/newsroom/press-releases/axopar-launches-the-38-sun-top-an-open-and-social-boat-built-for-shared-time-on-the-water) (axopar-news; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Pressmare - America’s Cup: Checco Bruni, Alinghi’s new skipper, wants to build the strongest sailing team](https://www.pressmare.it/en/media/press-mare/2026-11-07/america-cup-bruni-alingh-new-skipper-build-sailing-team-93968) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
 
 ## Сводка категорий
 
-- PREMIERE: 0
+- PREMIERE: 2
 - PROPULSION: 0
 - TECHNICAL_UPDATE: 0
 - CORPORATE: 0
