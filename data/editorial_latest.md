@@ -9,18 +9,18 @@
 
 ## Кандидаты для редактора
 
-- **P1 / PREMIERE** — [Axopar Completes the 38 Range with the All-New Cross Top — A Unique Balance Between Openness and Protection](https://www.axopar.com/media/newsroom/press-releases/axopar-completes-the-38-range-with-the-all-new-cross-top-a-unique-balance-between-openness-and-protection) (axopar-news; LINK_DISCOVERED; LINK_ANCHOR; scope=UNSPECIFIED; **требует проверки**)
-- **P1 / PREMIERE** — [Introducing the all-new Axopar 38 - Built on an icon, redefined](https://www.axopar.com/media/newsroom/press-releases/introducing-the-all-new-axopar-38-built-on-an-icon-redefined) (axopar-news; LINK_DISCOVERED; LINK_ANCHOR; scope=UNSPECIFIED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Axopar](https://www.axopar.com/media/newsroom/press-releases/axopar-launches-the-38-sun-top-an-open-and-social-boat-built-for-shared-time-on-the-water) (axopar-news; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Pressmare - America’s Cup: Checco Bruni, Alinghi’s new skipper, wants to build the strongest sailing team](https://www.pressmare.it/en/media/press-mare/2026-11-07/america-cup-bruni-alingh-new-skipper-build-sailing-team-93968) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Romital on turning design vision into yacht interiors](https://www.pressmare.it/en/media/press-mare/2026-11-08/romital-on-turning-design-vision-into-sustainable-interiors-93927) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Besenzoni brings three product ranges to Metstrade 2026](https://www.pressmare.it/en/media/press-mare/2026-11-09/besenzoni-at-metstrade-2026-unica-besenzoni-selection-94006) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Pressmare - Giovanni Costantino, from stock market listing to restructuring: the rise and fall of The Italian Sea Group’s founder](https://www.pressmare.it/en/media/press-mare/2026-11-09/costantino-rise-and-fall-of-the-italian-sea-groups-founder-93990) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Riva 96' Argo Super: what changes from the 90' Argo](https://www.pressmare.it/en/media/press-mare/2026-11-09/riva-96-argo-super-layout-engines-and-equipment-94003) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
 
 ## Сводка категорий
 
-- PREMIERE: 2
+- PREMIERE: 0
 - PROPULSION: 0
 - TECHNICAL_UPDATE: 0
 - CORPORATE: 0
-- NEEDS_REVIEW: 2
+- NEEDS_REVIEW: 4
 
 Ни цена, ни моторизация, ни премьера, ни доступность модели не подтверждены автоматической классификацией.
 Редактор обязан открыть первоисточник и проверить дату, модель, рынок дебюта и технические подробности перед публикацией.

@@ -2,7 +2,7 @@
   "axopar-news|https://www.axopar.com/media/newsroom": {
     "content_sha256": "e027bd28bc2e1da7839b160a9bf0eccf577b5c65725612eda6c976ccd945db97",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-08T14:21:52+00:00",
+    "last_seen_at_utc": "2026-11-09T17:38:59+00:00",
     "title": "Newsroom – Axopar Boats"
   },
   "axopar-news|https://www.axopar.com/media/newsroom/press-releases/axopar-and-brabus-marine-unveil-three-u-s-premieres-and-the-hull-of-fame-at-flibs-2026": {
@@ -14,19 +14,19 @@
   "axopar-news|https://www.axopar.com/media/newsroom/press-releases/axopar-brings-the-complete-38-range-to-flibs-with-two-u-s-premieres": {
     "content_sha256": "f23c5c59c8bfb7ea706355df1569d6f7f99135241d681d598bff15912726a190",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-08T14:21:52+00:00",
+    "last_seen_at_utc": "2026-11-09T17:38:59+00:00",
     "title": "Axopar Brings the Complete 38 Range to FLIBS with Two U.S. Premieres – Axopar Boats"
   },
   "beneteau-news|https://www.beneteau.com/newsroom/boating-news": {
     "content_sha256": "ad5abfdd51c51d537c52bcf8f0e2b2f33c16bcb4aaac0208848ed5bd014a7ae2",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-08T14:21:52+00:00",
+    "last_seen_at_utc": "2026-11-09T17:38:59+00:00",
     "title": "Boating news | BENETEAU"
   },
   "fjord-news|https://fjordboats.com/us/news": {
     "content_sha256": "cb4b897728c3f7f61affebc12117706c4dcd85099f1d3b8846693a80af73b09d",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-08T14:21:52+00:00",
+    "last_seen_at_utc": "2026-11-09T17:38:59+00:00",
     "title": "FJORD News | FJORD Boats"
   },
   "fjord-news|https://fjordboats.com/us/news/cannes-2026": {
@@ -44,13 +44,13 @@
   "fjord-news|https://fjordboats.com/us/news/time-to-introduce-the-new-fjord-440-sport": {
     "content_sha256": "3c9dc195769529964b12b14ca1971d0883cee05ba7f240d9836aaf2a2ce07040",
     "first_seen_at_utc": "2026-11-05T15:36:52+00:00",
-    "last_seen_at_utc": "2026-11-08T14:21:52+00:00",
+    "last_seen_at_utc": "2026-11-09T17:38:59+00:00",
     "title": "Time to introduce the New FJORD 440 Sport"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare": {
-    "content_sha256": "278b5a1288364586a5d605353e239d86701993402390f171096405c798498ae5",
+    "content_sha256": "b972ef9702ead88353de0784d007b0e07b9de99076a2cbe8e158822417e0a571",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-08T14:21:52+00:00",
+    "last_seen_at_utc": "2026-11-09T17:38:59+00:00",
     "title": "Pressmare | Press Mare"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-02/kiboko-4-wins-at-the-2026-iss-awards-93860": {
@@ -83,16 +83,22 @@
     "last_seen_at_utc": "2026-11-08T14:21:52+00:00",
     "title": "Pressmare | America’s Cup: Checco Bruni, Alinghi’s new skipper, wants to build the strongest sailing team"
   },
+  "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-09/costantino-rise-and-fall-of-the-italian-sea-groups-founder-93990": {
+    "content_sha256": "3be891cde52c932a4a66fefdf864c973cef346c3163069abd80ac0cc816e33df",
+    "first_seen_at_utc": "2026-11-09T17:38:59+00:00",
+    "last_seen_at_utc": "2026-11-09T17:38:59+00:00",
+    "title": "Pressmare | Giovanni Costantino, from stock market listing to restructuring: the rise and fall of The Italian Sea Group’s founder"
+  },
   "yamarin-news|https://yamarin.com/en/news": {
     "content_sha256": "a720e905cf54760d2b530170cf3e15d78139e5fa735354606488bf510de9a485",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-08T14:21:52+00:00",
+    "last_seen_at_utc": "2026-11-09T17:38:59+00:00",
     "title": "News – Yamarin Powerboats"
   },
   "yamarin-news|https://yamarin.com/en/news/new-yamarin-aura-lounge-more-space-enjoy-available-order-now": {
     "content_sha256": "2f539184f30c5d0dd512b2d84bbd419e12a1b5c261ccbf62f78ad8e28036d0b7",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-04T15:32:25+00:00",
+    "last_seen_at_utc": "2026-11-09T17:38:59+00:00",
     "title": "New Yamarin Aura Lounge with more space to enjoy - available to order now | Yamarin Powerboats"
   },
   "yamarin-news|https://yamarin.com/en/news/yamarin-arrives-spain-nautica-casas": {
