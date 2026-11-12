@@ -9,16 +9,19 @@
 
 ## Кандидаты для редактора
 
-- **REVIEW / NEEDS_REVIEW** — [Pressmare - Superyacht refit, Palumbo style, at Metstrade 2026](https://www.pressmare.it/en/media/press-mare/2026-11-11/superyacht-refit-palumbo-style-at-metstrade-2026-94046) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
-- **P3 / CORPORATE** — [From Monaco to Fort Lauderdale: ISS celebrates its 2026 Design & Leadership Award winners](https://www.pressmare.it/en/media/press-mare/2026-11-11/iss-celebrates-its-2026-design-leadership-award-winners-94040) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **P1 / PREMIERE** — [Cannes Yachting Festival 2026: Two Premieres and 10 Yachts on Display](https://fjordboats.com/us/news/cannes-yachting-festival-2026-two-premieres-and-10-yachts-on-display) (fjord-news; NEW_PAGE; PAGE_TITLE; scope=UNSPECIFIED; **требует проверки**)
+- **P1 / PREMIERE** — [Benetti sells the first Oasis 36M weeks after Cannes debut](https://www.pressmare.it/en/media/press-mare/2026-11-12/benetti-oasis-36m-hull-number-1-sold-94059) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=UNSPECIFIED; **требует проверки**)
+- **P1 / PREMIERE** — [Custom Line: 11 launches from april to september](https://www.pressmare.it/en/media/press-mare/2026-11-12/custom-line-11-launches-from-april-to-september-94068) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=UNSPECIFIED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Pressmare - Foiling Technology Zone at METS: racing technology for leisure boating](https://www.pressmare.it/en/media/press-mare/2026-11-12/foiling-technology-zone-at-mets-94080) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Pardo GT65: 20 metres, one layout, no compromise](https://www.pressmare.it/en/media/press-mare/2026-11-12/pardo-gt65-20-metres-one-layout-no-compromise-94063) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
 
 ## Сводка категорий
 
-- PREMIERE: 0
+- PREMIERE: 3
 - PROPULSION: 0
 - TECHNICAL_UPDATE: 0
-- CORPORATE: 1
-- NEEDS_REVIEW: 1
+- CORPORATE: 0
+- NEEDS_REVIEW: 2
 
 Ни цена, ни моторизация, ни премьера, ни доступность модели не подтверждены автоматической классификацией.
 Редактор обязан открыть первоисточник и проверить дату, модель, рынок дебюта и технические подробности перед публикацией.
