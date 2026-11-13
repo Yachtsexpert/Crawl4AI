@@ -9,19 +9,20 @@
 
 ## Кандидаты для редактора
 
-- **P1 / PREMIERE** — [Cannes Yachting Festival 2026: Two Premieres and 10 Yachts on Display](https://fjordboats.com/us/news/cannes-yachting-festival-2026-two-premieres-and-10-yachts-on-display) (fjord-news; NEW_PAGE; PAGE_TITLE; scope=UNSPECIFIED; **требует проверки**)
-- **P1 / PREMIERE** — [Benetti sells the first Oasis 36M weeks after Cannes debut](https://www.pressmare.it/en/media/press-mare/2026-11-12/benetti-oasis-36m-hull-number-1-sold-94059) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=UNSPECIFIED; **требует проверки**)
-- **P1 / PREMIERE** — [Custom Line: 11 launches from april to september](https://www.pressmare.it/en/media/press-mare/2026-11-12/custom-line-11-launches-from-april-to-september-94068) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=UNSPECIFIED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Pressmare - Foiling Technology Zone at METS: racing technology for leisure boating](https://www.pressmare.it/en/media/press-mare/2026-11-12/foiling-technology-zone-at-mets-94080) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Pardo GT65: 20 metres, one layout, no compromise](https://www.pressmare.it/en/media/press-mare/2026-11-12/pardo-gt65-20-metres-one-layout-no-compromise-94063) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [FJORD at Genoa Boat Show 2026](https://fjordboats.com/us/news/fjord-at-genoa-boat-show-2026) (fjord-news; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Harken at Metstrade 2026: a wide range of new products and systems for superyachts](https://www.pressmare.it/en/media/press-mare/2026-11-12/harken-metstrade-2026-range-products-systems-superyachts-94092) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [At Metstrade 2026, superyacht refit the Palumbo way](https://www.pressmare.it/en/media/press-mare/2026-11-13/at-metstrade-2026-superyacht-refit-the-palumbo-way-94094) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Honda Marine Europe takes its boatbuilder focus to Metstrade](https://www.pressmare.it/en/media/press-mare/2026-11-13/honda-marine-europe-at-metstrade-2026-94102) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Quick Group brings Intelligent Anchoring System to Metstrade](https://www.pressmare.it/en/media/press-mare/2026-11-13/quick-group-intelligent-anchoring-system-at-metstrade-94104) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Pressmare - Vulkan Italia at Metstrade in the Next Gen Zone](https://www.pressmare.it/en/media/press-mare/2026-11-13/vulkan-italia-at-metstrade-in-the-next-gen-zone-94095) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
 
 ## Сводка категорий
 
-- PREMIERE: 3
+- PREMIERE: 0
 - PROPULSION: 0
 - TECHNICAL_UPDATE: 0
 - CORPORATE: 0
-- NEEDS_REVIEW: 2
+- NEEDS_REVIEW: 6
 
 Ни цена, ни моторизация, ни премьера, ни доступность модели не подтверждены автоматической классификацией.
 Редактор обязан открыть первоисточник и проверить дату, модель, рынок дебюта и технические подробности перед публикацией.
