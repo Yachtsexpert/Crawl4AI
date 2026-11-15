@@ -9,12 +9,11 @@
 
 ## Кандидаты для редактора
 
-- **P1 / PREMIERE** — [Romeo Marine to unveil Romeo 55 at Dubai Boat Show](https://www.pressmare.it/en/media/press-mare/2026-11-13/romeo-55-world-premiere-at-dubai-boat-show-94121) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=UNSPECIFIED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Pressmare - Honda Marine Europe takes its boatbuilder focus to Metstrade](https://www.pressmare.it/en/media/press-mare/2026-11-13/honda-marine-europe-at-metstrade-2026-94102) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Pressmare - Honda Marine Europe takes its boatbuilder focus to Metstrade](https://www.pressmare.it/en/media/press-mare/2026-11-13/honda-marine-europe-at-metstrade-2026-94102) (pressmare-media; CONTENT_CHANGED; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
 
 ## Сводка категорий
 
-- PREMIERE: 1
+- PREMIERE: 0
 - PROPULSION: 0
 - TECHNICAL_UPDATE: 0
 - CORPORATE: 0
