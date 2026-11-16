@@ -1,8 +1,8 @@
 {
   "axopar-news|https://www.axopar.com/media/newsroom": {
-    "content_sha256": "ed64b60c2350a5ea17a52aca01cb82aa4539fcd7cbce450b3b9c6191e43987c5",
+    "content_sha256": "be201e04da316d57a3cdf82f950ff328de50581a336b44ea49294d31ee7473dd",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-15T14:51:17+00:00",
+    "last_seen_at_utc": "2026-11-16T17:09:12+00:00",
     "title": "Newsroom – Axopar Boats"
   },
   "axopar-news|https://www.axopar.com/media/newsroom/press-releases/axopar-and-brabus-marine-unveil-three-u-s-premieres-and-the-hull-of-fame-at-flibs-2026": {
@@ -18,15 +18,15 @@
     "title": "Axopar Brings the Complete 38 Range to FLIBS with Two U.S. Premieres – Axopar Boats"
   },
   "beneteau-news|https://www.beneteau.com/newsroom/boating-news": {
-    "content_sha256": "ad5abfdd51c51d537c52bcf8f0e2b2f33c16bcb4aaac0208848ed5bd014a7ae2",
+    "content_sha256": "b074bcd3d53027847c1e31fbfa6e9a8c2ef54a05eb6ffab2b84f9896ae136c8b",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-15T14:51:17+00:00",
+    "last_seen_at_utc": "2026-11-16T17:09:12+00:00",
     "title": "Boating news | BENETEAU"
   },
   "fjord-news|https://fjordboats.com/us/news": {
     "content_sha256": "e6c93955fc518fb0b367c8142c284f6e03eb13dc3ccc1dd1c3d6c471db140007",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-15T14:51:17+00:00",
+    "last_seen_at_utc": "2026-11-16T17:09:12+00:00",
     "title": "FJORD News | FJORD Boats"
   },
   "fjord-news|https://fjordboats.com/us/news/cannes-2026": {
@@ -50,7 +50,7 @@
   "fjord-news|https://fjordboats.com/us/news/hanseyachts-ag-appoints-new-fjord-dealer-in-turkey": {
     "content_sha256": "e1be96d06f805eb5ee207c7af5415eeccb7bef9c8ef4a05955004ad2e3b1065e",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-04T06:07:32+00:00",
+    "last_seen_at_utc": "2026-11-16T17:09:12+00:00",
     "title": "Hanse Yachts AG Appoints new Fjord Dealer in Turkey"
   },
   "fjord-news|https://fjordboats.com/us/news/time-to-introduce-the-new-fjord-440-sport": {
@@ -60,9 +60,9 @@
     "title": "Time to introduce the New FJORD 440 Sport"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare": {
-    "content_sha256": "df728e657a53c14b2a5bf56a0a31476d9e7794382034bea09a63b7a95f8f9021",
+    "content_sha256": "dff7a8f92e9d85f8460d63f8bc82aea327fbf28db8e6fa4e471826fbeb2fd5f6",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-15T14:51:17+00:00",
+    "last_seen_at_utc": "2026-11-16T17:09:12+00:00",
     "title": "Pressmare | Press Mare"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-02/kiboko-4-wins-at-the-2026-iss-awards-93860": {
@@ -131,10 +131,16 @@
     "last_seen_at_utc": "2026-11-13T15:29:38+00:00",
     "title": "Pressmare | Vulkan Italia at Metstrade in the Next Gen Zone"
   },
+  "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-16/van-der-valk-shipyard-acquires-waterfront-land-94164": {
+    "content_sha256": "481aed99d301a5feb58c3cc1ddd4466c56bb914726d88832783b56d059b2143d",
+    "first_seen_at_utc": "2026-11-16T17:09:12+00:00",
+    "last_seen_at_utc": "2026-11-16T17:09:12+00:00",
+    "title": "Pressmare | Van der Valk Shipyard buys 20,000 m² of land in Waalwijk"
+  },
   "yamarin-news|https://yamarin.com/en/news": {
     "content_sha256": "a720e905cf54760d2b530170cf3e15d78139e5fa735354606488bf510de9a485",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-15T14:51:17+00:00",
+    "last_seen_at_utc": "2026-11-16T17:09:12+00:00",
     "title": "News – Yamarin Powerboats"
   },
   "yamarin-news|https://yamarin.com/en/news/new-yamarin-aura-lounge-more-space-enjoy-available-order-now": {
@@ -146,7 +152,7 @@
   "yamarin-news|https://yamarin.com/en/news/yamarin-arrives-spain-nautica-casas": {
     "content_sha256": "2c192b7eb2fff60bb872749a658783ff64a1bf66bebcbc0f110d280a8a2e16e8",
     "first_seen_at_utc": "2026-11-05T15:36:52+00:00",
-    "last_seen_at_utc": "2026-11-11T15:25:08+00:00",
+    "last_seen_at_utc": "2026-11-16T17:09:12+00:00",
     "title": "Yamarin arrives in Spain with Náutica Casas | Yamarin Powerboats"
   },
   "yamarin-news|https://yamarin.com/en/news/yamarin-brings-its-new-flagship-florida": {
