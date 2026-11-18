@@ -9,15 +9,14 @@
 
 ## Кандидаты для редактора
 
-- **P1 / PREMIERE** — [Besenzoni joins forces with MacGregor on superyacht installation and service, unveils three Unica systems at Metstrade](https://www.pressmare.it/en/media/press-mare/2026-11-17/besenzoni-and-macgregor-agreement-and-new-unica-systems-94211) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=UNSPECIFIED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Torqeedo brings Power 3 and Cruise 12.0 Tiller to Metstrade](https://www.pressmare.it/en/media/press-mare/2026-11-16/torqeedo-power-3-cruise-120-tiller-at-metstrade-94174) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Pressmare - Guidi at METS in Amsterdam after a year of consolidation](https://www.pressmare.it/en/media/press-mare/2026-11-17/guidi-at-mets-2026-orders-and-revenue-in-line-with-2025-94207) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Superyacht Forum opening session: geopolitics comes to the shipyard, Jaap de Hoop Scheffer’s message](https://www.pressmare.it/en/media/press-mare/2026-11-17/superyacht-forum-jaap-de-hoop-scheffers-message-94187) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
-- **P3 / CORPORATE** — [Dame Design Awards 2026: full list of winners](https://www.pressmare.it/en/media/press-mare/2026-11-17/dame-design-awards-2026-full-list-of-winners-94195) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Benetti strengthens its presence in Mexico: Oasis 40M “Cada Dia” in La Paz and four yachts under construction for Mexican owners](https://www.pressmare.it/en/media/press-mare/2026-11-18/benetti-mexico-oasis-40m-cada-dia-in-la-paz-94239) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Beyond the yacht: making the invisible industry visible](https://www.pressmare.it/en/media/press-mare/2026-11-18/beyond-the-yacht-making-the-invisible-industry-visible-94217) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [D-Marin runs seven Dubai marinas as the sector consolidates](https://www.pressmare.it/en/media/press-mare/2026-11-18/d-marin-dubai-palm-jumeirah-and-dubai-islands-94204) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **P3 / CORPORATE** — [Pressmare - Ferretti Group puts almost €30m into Ancona expansion](https://www.pressmare.it/en/media/press-mare/2026-11-18/ferretti-group-ancona-five-new-halls-at-ex-tubimar-site-94232) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
 
 ## Сводка категорий
 
-- PREMIERE: 1
+- PREMIERE: 0
 - PROPULSION: 0
 - TECHNICAL_UPDATE: 0
 - CORPORATE: 1
