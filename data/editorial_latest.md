@@ -9,17 +9,17 @@
 
 ## Кандидаты для редактора
 
-- **REVIEW / NEEDS_REVIEW** — [Benetti strengthens its presence in Mexico: Oasis 40M “Cada Dia” in La Paz and four yachts under construction for Mexican owners](https://www.pressmare.it/en/media/press-mare/2026-11-18/benetti-mexico-oasis-40m-cada-dia-in-la-paz-94239) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Beyond the yacht: making the invisible industry visible](https://www.pressmare.it/en/media/press-mare/2026-11-18/beyond-the-yacht-making-the-invisible-industry-visible-94217) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [D-Marin runs seven Dubai marinas as the sector consolidates](https://www.pressmare.it/en/media/press-mare/2026-11-18/d-marin-dubai-palm-jumeirah-and-dubai-islands-94204) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
-- **P3 / CORPORATE** — [Pressmare - Ferretti Group puts almost €30m into Ancona expansion](https://www.pressmare.it/en/media/press-mare/2026-11-18/ferretti-group-ancona-five-new-halls-at-ex-tubimar-site-94232) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
+- **P2 / TECHNICAL_UPDATE** — [A supersized, redesigned Metstrade closes on a positive note](https://www.pressmare.it/en/media/press-mare/2026-11-19/metstrade-2026-1763-exhibitors-in-amsterdam-94263) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Daino, the digital brain aiming to optimise work in yacht yards](https://www.pressmare.it/en/media/press-mare/2026-11-19/daino-digital-brain-aiming-optimise-work-in-yacht-yards-93958) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Pressmare - Opac at Metstrade 2026 with lit carbon poles and a louvred partition](https://www.pressmare.it/en/media/press-mare/2026-11-19/opac-at-metstrade-2026-carbon-poles-and-led-hard-top-94256) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Seares brings Seadamp load-monitoring mooring dampers to Metstrade 2026](https://www.pressmare.it/en/media/press-mare/2026-11-19/seares-seadamp-at-metstrade-2026-smart-mooring-dampers-94253) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
 
 ## Сводка категорий
 
 - PREMIERE: 0
 - PROPULSION: 0
-- TECHNICAL_UPDATE: 0
-- CORPORATE: 1
+- TECHNICAL_UPDATE: 1
+- CORPORATE: 0
 - NEEDS_REVIEW: 3
 
 Ни цена, ни моторизация, ни премьера, ни доступность модели не подтверждены автоматической классификацией.
