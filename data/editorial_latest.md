@@ -9,8 +9,9 @@
 
 ## Кандидаты для редактора
 
-- **REVIEW / NEEDS_REVIEW** — [Pressmare - More billionaires, fewer converts? The superyacht industry’s growth challenge](https://www.pressmare.it/en/media/press-mare/2026-11-20/billionaires-fewer-converts-superyacht-industry-challenge-94281) (pressmare-media; CONTENT_CHANGED; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Yamarin arrives in Spain with Náutica Casas - Yamarin Powerboats](https://yamarin.com/en/news/yamarin-arrives-spain-nautica-casas) (yamarin-news; CONTENT_CHANGED; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Carla Guilhem on designing for the way people live](https://www.pressmare.it/en/media/press-mare/2026-11-23/carla-guilhem-on-designing-for-the-way-people-live-94294) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Pressmare - “Lucietta”, the electric taxi redesigning a Venetian icon](https://www.pressmare.it/en/media/press-mare/2026-11-23/lucietta-the-electric-taxi-redesigning-a-venetian-icon-94287) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Yacht Racing Forum 2026: sailing, industry and innovation take centre stage in Amsterdam](https://www.pressmare.it/en/media/press-mare/2026-11-23/yacht-racing-forum-2026-sailing-industry-and-innovation-94316) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
 
 ## Сводка категорий
 
@@ -18,7 +19,7 @@
 - PROPULSION: 0
 - TECHNICAL_UPDATE: 0
 - CORPORATE: 0
-- NEEDS_REVIEW: 2
+- NEEDS_REVIEW: 3
 
 Ни цена, ни моторизация, ни премьера, ни доступность модели не подтверждены автоматической классификацией.
 Редактор обязан открыть первоисточник и проверить дату, модель, рынок дебюта и технические подробности перед публикацией.

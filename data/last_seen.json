@@ -2,13 +2,13 @@
   "axopar-news|https://www.axopar.com/media/newsroom": {
     "content_sha256": "ed64b60c2350a5ea17a52aca01cb82aa4539fcd7cbce450b3b9c6191e43987c5",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-22T15:28:14+00:00",
+    "last_seen_at_utc": "2026-11-23T19:19:43+00:00",
     "title": "Newsroom – Axopar Boats"
   },
   "axopar-news|https://www.axopar.com/media/newsroom/press-releases/axopar-and-brabus-marine-unveil-three-u-s-premieres-and-the-hull-of-fame-at-flibs-2026": {
     "content_sha256": "0ae3e6afadd93f9483b493e27c598c50246e23667b995e41f291ea5685157c5f",
     "first_seen_at_utc": "2026-11-05T15:36:52+00:00",
-    "last_seen_at_utc": "2026-11-21T15:26:34+00:00",
+    "last_seen_at_utc": "2026-11-23T19:19:43+00:00",
     "title": "Axopar and BRABUS Marine Unveil Three U.S. Premieres and the Hull of Fame at FLIBS 2026 – Axopar Boats"
   },
   "axopar-news|https://www.axopar.com/media/newsroom/press-releases/axopar-brings-the-complete-38-range-to-flibs-with-two-u-s-premieres": {
@@ -18,15 +18,15 @@
     "title": "Axopar Brings the Complete 38 Range to FLIBS with Two U.S. Premieres – Axopar Boats"
   },
   "beneteau-news|https://www.beneteau.com/newsroom/boating-news": {
-    "content_sha256": "070edc88cb8bd02ac4fbb6ab08160670893d59b8134353426c5aefdb9fa4a4d6",
+    "content_sha256": "b074bcd3d53027847c1e31fbfa6e9a8c2ef54a05eb6ffab2b84f9896ae136c8b",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-22T15:28:14+00:00",
+    "last_seen_at_utc": "2026-11-23T19:19:43+00:00",
     "title": "Boating news | BENETEAU"
   },
   "fjord-news|https://fjordboats.com/us/news": {
-    "content_sha256": "e6c93955fc518fb0b367c8142c284f6e03eb13dc3ccc1dd1c3d6c471db140007",
+    "content_sha256": "3154fe75b59448314ad6942ffa031b033a7b74550af2aba6eba4d69659d60da2",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-22T15:28:14+00:00",
+    "last_seen_at_utc": "2026-11-23T19:19:43+00:00",
     "title": "FJORD News | FJORD Boats"
   },
   "fjord-news|https://fjordboats.com/us/news/cannes-2026": {
@@ -44,7 +44,7 @@
   "fjord-news|https://fjordboats.com/us/news/fjord-at-genoa-boat-show-2026": {
     "content_sha256": "c9c1aa29c5ea01d00c27cda52313cf3968949ba63994c859fd02e986761a8e8e",
     "first_seen_at_utc": "2026-11-13T15:29:38+00:00",
-    "last_seen_at_utc": "2026-11-20T16:14:16+00:00",
+    "last_seen_at_utc": "2026-11-23T19:19:43+00:00",
     "title": "FJORD at Genoa Boat Show 2026"
   },
   "fjord-news|https://fjordboats.com/us/news/hanseyachts-ag-appoints-new-fjord-dealer-in-turkey": {
@@ -60,9 +60,9 @@
     "title": "Time to introduce the New FJORD 440 Sport"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare": {
-    "content_sha256": "c1d0660979244fdafa6f3341baa621d5db7f50095cd6113e029f5bbebf859f25",
+    "content_sha256": "2d96e649f7eebe30f68fedb237f97a161d2af6b99e281e2a5e4b8751990dcd60",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-22T15:28:14+00:00",
+    "last_seen_at_utc": "2026-11-23T19:19:43+00:00",
     "title": "Pressmare | Press Mare"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-02/kiboko-4-wins-at-the-2026-iss-awards-93860": {
@@ -167,10 +167,16 @@
     "last_seen_at_utc": "2026-11-21T15:26:34+00:00",
     "title": "Pressmare | The Women’s Yachting Awards 2026 at Metstrade"
   },
+  "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-23/lucietta-the-electric-taxi-redesigning-a-venetian-icon-94287": {
+    "content_sha256": "cc0ffae487442cef6e90efe50009c456f4f9f5481c214abc384eefac8684a886",
+    "first_seen_at_utc": "2026-11-23T19:19:43+00:00",
+    "last_seen_at_utc": "2026-11-23T19:19:43+00:00",
+    "title": "Pressmare | “Lucietta”, the electric taxi redesigning a Venetian icon"
+  },
   "yamarin-news|https://yamarin.com/en/news": {
     "content_sha256": "595bc30f99a0747e49dca7f051525a00d03af39f577a08ba8a2c31159f3af346",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-22T15:28:14+00:00",
+    "last_seen_at_utc": "2026-11-23T19:19:43+00:00",
     "title": "News – Yamarin Powerboats"
   },
   "yamarin-news|https://yamarin.com/en/news/new-yamarin-aura-lounge-more-space-enjoy-available-order-now": {
@@ -182,7 +188,7 @@
   "yamarin-news|https://yamarin.com/en/news/yamarin-arrives-spain-nautica-casas": {
     "content_sha256": "7473a358e8dd2e64ce542bfaf159727eed0faed9ee8193f6902a8adf9f5ba236",
     "first_seen_at_utc": "2026-11-05T15:36:52+00:00",
-    "last_seen_at_utc": "2026-11-22T15:28:14+00:00",
+    "last_seen_at_utc": "2026-11-23T19:19:43+00:00",
     "title": "Yamarin arrives in Spain with Náutica Casas | Yamarin Powerboats"
   },
   "yamarin-news|https://yamarin.com/en/news/yamarin-aura-cabin-gathering-international-praise-and-prestigious-award-nominations": {
