@@ -9,14 +9,16 @@
 
 ## Кандидаты для редактора
 
-- **REVIEW / NEEDS_REVIEW** — [Carla Guilhem on designing for the way people live](https://www.pressmare.it/en/media/press-mare/2026-11-23/carla-guilhem-on-designing-for-the-way-people-live-94294) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Pressmare - “Lucietta”, the electric taxi redesigning a Venetian icon](https://www.pressmare.it/en/media/press-mare/2026-11-23/lucietta-the-electric-taxi-redesigning-a-venetian-icon-94287) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
-- **REVIEW / NEEDS_REVIEW** — [Yacht Racing Forum 2026: sailing, industry and innovation take centre stage in Amsterdam](https://www.pressmare.it/en/media/press-mare/2026-11-23/yacht-racing-forum-2026-sailing-industry-and-innovation-94316) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **P1 / PREMIERE** — [Pressmare - Custom Line 50 aluminium superyacht launched in Ancona](https://www.pressmare.it/en/media/press-mare/2026-11-24/custom-line-50-aluminium-superyacht-launched-in-ancona-94347) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=UNSPECIFIED; **требует проверки**)
+- **P1 / PROPULSION** — [Sunseeker renews MAN Engines deal](https://www.pressmare.it/en/media/press-mare/2026-11-24/sunseeker-renews-man-engines-deal-94336) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Benetti at the Dubai International Boat Show 2026 with 15 yachts in build for Middle East owners](https://www.pressmare.it/en/media/press-mare/2026-11-24/benetti-dubai-international-boat-show-2026-94343) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [The Italian Sea Group: Palumbo Group steps back](https://www.pressmare.it/en/media/press-mare/2026-11-24/the-italian-sea-group-palumbo-group-steps-back-94325) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
+- **REVIEW / NEEDS_REVIEW** — [Viola Borghi joins Sanlorenzo as PMO](https://www.pressmare.it/en/media/press-mare/2026-11-24/viola-borghi-joins-sanlorenzo-as-pmo-94334) (pressmare-media; LINK_DISCOVERED; LINK_ANCHOR; scope=NOT_DETERMINED; **требует проверки**)
 
 ## Сводка категорий
 
-- PREMIERE: 0
-- PROPULSION: 0
+- PREMIERE: 1
+- PROPULSION: 1
 - TECHNICAL_UPDATE: 0
 - CORPORATE: 0
 - NEEDS_REVIEW: 3
