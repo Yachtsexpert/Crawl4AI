@@ -2,13 +2,13 @@
   "axopar-news|https://www.axopar.com/media/newsroom": {
     "content_sha256": "32bfd441eba89abd7d04403feac7975bbee56cbe97891d63d2f953f0109e0883",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-27T17:31:13+00:00",
+    "last_seen_at_utc": "2026-11-28T16:15:38+00:00",
     "title": "Newsroom – Axopar Boats"
   },
   "axopar-news|https://www.axopar.com/media/newsroom/press-releases/axopar-and-brabus-marine-unveil-three-u-s-premieres-and-the-hull-of-fame-at-flibs-2026": {
     "content_sha256": "0ae3e6afadd93f9483b493e27c598c50246e23667b995e41f291ea5685157c5f",
     "first_seen_at_utc": "2026-11-05T15:36:52+00:00",
-    "last_seen_at_utc": "2026-11-24T18:57:28+00:00",
+    "last_seen_at_utc": "2026-11-28T16:15:38+00:00",
     "title": "Axopar and BRABUS Marine Unveil Three U.S. Premieres and the Hull of Fame at FLIBS 2026 – Axopar Boats"
   },
   "axopar-news|https://www.axopar.com/media/newsroom/press-releases/axopar-brings-the-complete-38-range-to-flibs-with-two-u-s-premieres": {
@@ -18,15 +18,15 @@
     "title": "Axopar Brings the Complete 38 Range to FLIBS with Two U.S. Premieres – Axopar Boats"
   },
   "beneteau-news|https://www.beneteau.com/newsroom/boating-news": {
-    "content_sha256": "b074bcd3d53027847c1e31fbfa6e9a8c2ef54a05eb6ffab2b84f9896ae136c8b",
+    "content_sha256": "ad5abfdd51c51d537c52bcf8f0e2b2f33c16bcb4aaac0208848ed5bd014a7ae2",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-27T17:31:13+00:00",
+    "last_seen_at_utc": "2026-11-28T16:15:38+00:00",
     "title": "Boating news | BENETEAU"
   },
   "fjord-news|https://fjordboats.com/us/news": {
     "content_sha256": "6106ead0de6aba326c0a7c731504f70954e395164566e57d0a2e1fd5bcd4e039",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-27T17:31:13+00:00",
+    "last_seen_at_utc": "2026-11-28T16:15:38+00:00",
     "title": "FJORD News | FJORD Boats"
   },
   "fjord-news|https://fjordboats.com/us/news/cannes-2026": {
@@ -44,7 +44,7 @@
   "fjord-news|https://fjordboats.com/us/news/fjord-at-genoa-boat-show-2026": {
     "content_sha256": "c9c1aa29c5ea01d00c27cda52313cf3968949ba63994c859fd02e986761a8e8e",
     "first_seen_at_utc": "2026-11-13T15:29:38+00:00",
-    "last_seen_at_utc": "2026-11-26T17:47:33+00:00",
+    "last_seen_at_utc": "2026-11-28T16:15:38+00:00",
     "title": "FJORD at Genoa Boat Show 2026"
   },
   "fjord-news|https://fjordboats.com/us/news/hanseyachts-ag-appoints-new-fjord-dealer-in-turkey": {
@@ -62,7 +62,7 @@
   "pressmare-media|https://www.pressmare.it/en/media/press-mare": {
     "content_sha256": "1583421c3fb5e62702c22001f8052c09e09db1b92f840b2b143da55c03e93998",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-27T17:31:13+00:00",
+    "last_seen_at_utc": "2026-11-28T16:15:38+00:00",
     "title": "Pressmare | Press Mare"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-02/kiboko-4-wins-at-the-2026-iss-awards-93860": {
@@ -186,9 +186,9 @@
     "title": "Pressmare | Rossinavi launches Alfa, a 62-metre full-custom superyacht"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-26/ferretti-yachts-infynito-100-new-range-flagship-94386": {
-    "content_sha256": "1cad7204d26bbe3a2787c5120d65c9f2c718be32a6402ae3e3485c2e6c989675",
+    "content_sha256": "4550fd8c863f8747f52ad68d14801a766ac16d05e51ac2a6bf2e93d510d8bfc0",
     "first_seen_at_utc": "2026-11-26T17:47:33+00:00",
-    "last_seen_at_utc": "2026-11-26T17:47:33+00:00",
+    "last_seen_at_utc": "2026-11-28T16:15:38+00:00",
     "title": "Pressmare | Ferretti Yachts Infynito 100: the new range flagship moves the owner’s suite up to the upper deck"
   },
   "pressmare-media|https://www.pressmare.it/en/media/press-mare/2026-11-27/baglietto-fast50-back-roots-combining-performance-livability-93962": {
@@ -200,7 +200,7 @@
   "yamarin-news|https://yamarin.com/en/news": {
     "content_sha256": "595bc30f99a0747e49dca7f051525a00d03af39f577a08ba8a2c31159f3af346",
     "first_seen_at_utc": "2026-11-04T06:07:32+00:00",
-    "last_seen_at_utc": "2026-11-27T17:31:13+00:00",
+    "last_seen_at_utc": "2026-11-28T16:15:38+00:00",
     "title": "News – Yamarin Powerboats"
   },
   "yamarin-news|https://yamarin.com/en/news/new-yamarin-aura-lounge-more-space-enjoy-available-order-now": {
@@ -218,7 +218,7 @@
   "yamarin-news|https://yamarin.com/en/news/yamarin-aura-cabin-gathering-international-praise-and-prestigious-award-nominations": {
     "content_sha256": "1e67ea59e043a026c5bdc56bbcf7b17c1d8facd7c3f816ef0510ed28e6d32da6",
     "first_seen_at_utc": "2026-11-20T16:14:16+00:00",
-    "last_seen_at_utc": "2026-11-26T17:47:33+00:00",
+    "last_seen_at_utc": "2026-11-28T16:15:38+00:00",
     "title": "Yamarin Aura Cabin Gathering International Praise and Prestigious Award Nominations | Yamarin Powerboats"
   },
   "yamarin-news|https://yamarin.com/en/news/yamarin-brings-its-new-flagship-florida": {

@@ -9,15 +9,15 @@
 
 ## Кандидаты для редактора
 
-- **REVIEW / NEEDS_REVIEW** — [Pressmare - Baglietto FAST50: back to the roots, combining performance with livability](https://www.pressmare.it/en/media/press-mare/2026-11-27/baglietto-fast50-back-roots-combining-performance-livability-93962) (pressmare-media; NEW_PAGE; PAGE_TITLE; scope=NOT_DETERMINED; **требует проверки**)
+- **P1 / PREMIERE** — [Pressmare - Ferretti Yachts Infynito 100: the new range flagship moves the owner’s suite up to the upper deck](https://www.pressmare.it/en/media/press-mare/2026-11-26/ferretti-yachts-infynito-100-new-range-flagship-94386) (pressmare-media; CONTENT_CHANGED; PAGE_TITLE; scope=UNSPECIFIED; **требует проверки**)
 
 ## Сводка категорий
 
-- PREMIERE: 0
+- PREMIERE: 1
 - PROPULSION: 0
 - TECHNICAL_UPDATE: 0
 - CORPORATE: 0
-- NEEDS_REVIEW: 1
+- NEEDS_REVIEW: 0
 
 Ни цена, ни моторизация, ни премьера, ни доступность модели не подтверждены автоматической классификацией.
 Редактор обязан открыть первоисточник и проверить дату, модель, рынок дебюта и технические подробности перед публикацией.
